@@ -134,11 +134,12 @@ section.description {
 .back {
   background-color: #a8201a;
   border-radius: 50px;
-  /* color: white; */
-  padding: 15px 32px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  width: 250px;
   font-size: 16px;
   margin: 10px 0px 0 0;
   cursor: pointer;
