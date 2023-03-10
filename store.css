@@ -147,7 +147,6 @@ section.description {
 
 .back img {
   display: inline;
-  position: absolute;
   filter: brightness(0) invert();
   transform: rotate(-180deg);
   flex-direction: row-reverse;
