@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  min-height: 300px;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #0f8b8d;
+  border-bottom: 1px solid #5d432a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.4);
+  transition: 0.4s linear;
+}
+
+#menu > a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+#menu > a:hover {
+  color: var(--primary);
+}
+
+#menu > a:visited {
+  text-decoration: none;
+}
+
+#menu {
+  display: none;
+}
+
+/* Store */
+
+section.store {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-around;
+}
+
+.store div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: 150px;
+}
+
+section.store h1 {
+  color: #0f8b8d;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: xx-large;
+}
+
+h2#harga {
+  color: #0f8b8d;
+  font-size: xx-large;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+section.description {
+  margin: 80px 200px;
+}
+
+.description h2 {
+  color: #0f8b8d;
+  padding: 0 0 10px 0;
+}
+
+.garis {
+  width: 200px;
+  background-color: #ec9a29;
+  height: 3px;
+  /* margin: 10px 0; */
+}
+
+.description p {
+  padding: 10px 0px;
+}
+
+.back {
+  background-color: #a8201a;
+  border-radius: 50px;
+  /* color: white; */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0px 0 0;
+  cursor: pointer;
+}
+
+.back img {
+  display: inline;
+  position: absolute;
+  filter: brightness(0) invert();
+  transform: rotate(-180deg);
+  flex-direction: row-reverse;
+}
+
+.back a {
+  color: #fff;
+}

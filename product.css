@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: #f1f1f1;
+  min-height: 300px;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #0f8b8d;
+  border-bottom: 1px solid #5d432a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.4);
+  transition: 0.4s linear;
+}
+
+#menu > a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+#menu > a:hover {
+  color: var(--primary);
+}
+
+#menu > a:visited {
+  text-decoration: none;
+}
+
+#menu {
+  display: none;
+}
+
+/* Product */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  padding: 200px;
+}
+
+.product h2 {
+  color: #0f8b8d;
+}
+
+.product h3 {
+  color: #143642;
+}
+
+.product h4,
+h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product .box {
+  padding: 20px;
+}
+
+.product img {
+  width: 216px;
+}
+
+.product div {
+  display: flex;
+  column-gap: 20px;
+}
+
+.product div .box {
+  background-image: url(Asset/coffee_background.png);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+/* Akhir Product */
